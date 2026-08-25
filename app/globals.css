@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+
+  /* Warm alabaster — a lighter, airier reading of the Old Money palette:
+     porcelain/linen surfaces with a softer sage-gold accent. */
+  --color-bg: 250 248 243;
+  --color-bg-alt: 244 240 231;
+  --color-surface: 255 253 249;
+  --color-text: 51 46 40;
+  --color-text-muted: 106 98 84;
+  --color-text-faint: 150 141 122;
+  --color-border: 231 224 208;
+  --color-border-strong: 210 199 174;
+  --color-accent: 139 150 118;
+  --color-accent-strong: 108 118 88;
+  --color-gold: 191 165 118;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  /* A lighter warm charcoal rather than near-black — still low-key, but
+     noticeably less heavy than a deep espresso/olive dark mode. */
+  --color-bg: 54 56 47;
+  --color-bg-alt: 64 66 55;
+  --color-surface: 61 63 52;
+  --color-text: 240 236 224;
+  --color-text-muted: 196 189 170;
+  --color-text-faint: 156 149 130;
+  --color-border: 82 84 70;
+  --color-border-strong: 102 104 86;
+  --color-accent: 176 190 157;
+  --color-accent-strong: 214 202 160;
+  --color-gold: 216 190 143;
+}
+
+* {
+  border-color: rgb(var(--color-border));
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(var(--color-bg));
+  color: rgb(var(--color-text));
+  font-feature-settings: "liga" 1, "kern" 1;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background-color: rgb(var(--color-accent) / 0.25);
+  color: rgb(var(--color-text));
+}
+
+:focus-visible {
+  outline: 2px solid rgb(var(--color-accent-strong));
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Slim, understated scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(var(--color-bg));
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(var(--color-border-strong));
+  border-radius: 9999px;
+  border: 3px solid rgb(var(--color-bg));
+}
+
+.paper-texture {
+  background-image:
+    radial-gradient(rgb(var(--color-text) / 0.035) 0.6px, transparent 0.6px);
+  background-size: 3px 3px;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(1.5rem);
+  transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1), transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.text-balance {
+  text-wrap: balance;
+}
