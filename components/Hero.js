@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { hero, profile } from "@/data/portfolio";
 import { Reveal } from "@/components/Reveal";
 
@@ -42,7 +43,7 @@ export function Hero() {
               )}
               {profile.availability && (
                 <span className="inline-flex items-center gap-2 rounded-full border border-line px-3 py-1 text-xs font-medium uppercase tracking-wide text-accent-strong">
-                  <span className="h-1.5 w-1.5 rounded-full bg-accent-strong" aria-hidden="true" />
+                  <span className="h-1.5 w-1.5 rounded-full bg-accent" aria-hidden="true" />
                   {profile.availability}
                 </span>
               )}
@@ -92,15 +93,18 @@ export function Hero() {
           </Reveal>
         </div>
 
-        <Reveal delay={250} className="hidden justify-self-end lg:block">
-          <div className="flex h-44 w-44 flex-col items-center justify-center border border-line-strong text-center">
-            <span className="font-serif text-4xl tracking-wide text-ink">{profile.initials}</span>
-            <span className="mt-3 h-px w-10 bg-accent-strong" aria-hidden="true" />
-            <span className="mt-3 px-4 text-[0.65rem] uppercase tracking-widest2 text-ink-faint">
-              {profile.title}
-            </span>
+        {/* <Reveal delay={250} className="hidden justify-self-end lg:block">
+          <div className="relative h-[178px] w-[178px] overflow-hidden border border-line-strong">
+            <Image
+              src="/self.jpeg"
+              alt={profile.name}
+              fill
+              sizes="178px"
+              priority
+              className="object-cover object-top"
+            />
           </div>
-        </Reveal>
+        </Reveal> */}
       </div>
 
       <a

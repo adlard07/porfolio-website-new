@@ -367,7 +367,7 @@ export const beyondWork = {
 };
 
 export const closingCta = {
-  eyebrow: "Let's talk",
+  eyebrow: "Let's Connect",
   heading: "Interested in building something meaningful together?",
   body: "I'm always glad to hear about interesting problems, thoughtful teams, and roles worth considering.",
 };

@@ -19,7 +19,7 @@ export function CareerHighlights() {
             <Reveal key={item.label} delay={index * 80} className="text-center sm:text-left">
               <p className="font-serif text-4xl text-ink sm:text-5xl">
                 {item.value}
-                <span className="text-accent-strong">{item.suffix}</span>
+                <span className="text-accent">{item.suffix}</span>
               </p>
               <p className="mt-2 text-xs uppercase tracking-widest2 text-ink-muted">
                 {item.label}

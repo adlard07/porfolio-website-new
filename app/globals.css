@@ -5,37 +5,40 @@
 :root {
   color-scheme: light;
 
-  /* Warm alabaster — a lighter, airier reading of the Old Money palette:
-     porcelain/linen surfaces with a softer sage-gold accent. */
-  --color-bg: 250 248 243;
-  --color-bg-alt: 244 240 231;
-  --color-surface: 255 253 249;
-  --color-text: 51 46 40;
-  --color-text-muted: 106 98 84;
-  --color-text-faint: 150 141 122;
-  --color-border: 231 224 208;
-  --color-border-strong: 210 199 174;
-  --color-accent: 139 150 118;
-  --color-accent-strong: 108 118 88;
-  --color-gold: 191 165 118;
+  /* Monochrome editorial: warm light-gray paper, near-black ink, gray
+     mid-tones — with a single burnt-orange accent used sparingly.
+     --color-accent is the orange; --color-accent-strong is near-black
+     and carries the bulk of the emphasis so orange stays rare. */
+  --color-bg: 240 239 236;
+  --color-bg-alt: 229 228 224;
+  --color-surface: 250 250 248;
+  --color-text: 24 23 22;
+  --color-text-muted: 92 90 86;
+  --color-text-faint: 141 138 133;
+  --color-border: 217 215 210;
+  --color-border-strong: 183 180 174;
+  --color-accent: 221 78 36;
+  --color-accent-strong: 26 24 22;
+  --color-gold: 221 78 36;
 }
 
 :root[data-theme="dark"] {
   color-scheme: dark;
 
-  /* A lighter warm charcoal rather than near-black — still low-key, but
-     noticeably less heavy than a deep espresso/olive dark mode. */
-  --color-bg: 54 56 47;
-  --color-bg-alt: 64 66 55;
-  --color-surface: 61 63 52;
-  --color-text: 240 236 224;
-  --color-text-muted: 196 189 170;
-  --color-text-faint: 156 149 130;
-  --color-border: 82 84 70;
-  --color-border-strong: 102 104 86;
-  --color-accent: 176 190 157;
-  --color-accent-strong: 214 202 160;
-  --color-gold: 216 190 143;
+  /* Warm near-black rather than pure #000, warm off-white ink, gray
+     mid-tones — the same single burnt-orange accent, a touch brighter
+     to hold up against the dark ground. */
+  --color-bg: 22 21 20;
+  --color-bg-alt: 31 30 28;
+  --color-surface: 27 26 24;
+  --color-text: 240 239 235;
+  --color-text-muted: 173 170 164;
+  --color-text-faint: 125 122 117;
+  --color-border: 57 55 52;
+  --color-border-strong: 84 81 77;
+  --color-accent: 233 98 55;
+  --color-accent-strong: 244 243 239;
+  --color-gold: 233 98 55;
 }
 
 * {
