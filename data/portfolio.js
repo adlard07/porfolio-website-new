@@ -358,6 +358,7 @@ export const closingCta = {
   body: "I'm always glad to hear about interesting problems, thoughtful teams, and roles worth considering.",
 };
 
+
 export const footer = {
   note: "Built with Next.js & Tailwind CSS.",
 };
