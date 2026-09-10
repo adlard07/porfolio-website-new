@@ -346,7 +346,7 @@ export const beyondWork = {
     { label: "Outside of work", description: "Long-distance cycling and slow, deliberate cooking." },
     { label: "Cuisine", description: "Coastal Konkani food, and a long-running fondness for good filter coffee." },
     { label: "Sport", description: "Plays badminton or football on weekends." },
-    { label: "Reading", description: "Currently reading 100 ways to survive in the wild" },
+    { label: "Reading", description: "Currently reading `100 ways to survive in the wild`" },
     { label: "Travel", description: "Prefers slow travel: a week in one place over five cities in five days." },
     // { label: "A small fact", description: "" },
   ],
