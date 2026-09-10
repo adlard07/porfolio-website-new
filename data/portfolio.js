@@ -352,7 +352,6 @@ export const beyondWork = {
   ],
 };
 
-
 export const closingCta = {
   eyebrow: "Let's talk",
   heading: "Interested in building something meaningful together?",
