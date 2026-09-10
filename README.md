@@ -49,7 +49,7 @@ At minimum, replace:
 | `profile.name`, `profile.title`, `profile.tagline` | `data/portfolio.js` | Shown in the header, hero, footer, and SEO metadata |
 | `profile.email` | `data/portfolio.js` | Pre-filled with the address on this account — confirm it's the one you want public |
 | `profile.social.github` / `linkedin` | `data/portfolio.js` | Used in the hero, footer, and Connect modal |
-| `profile.resumeUrl` | `data/portfolio.js` + `public/` | Ships with a placeholder PDF at `public/resume-placeholder.pdf` — replace the file with your real résumé (keep the same filename, or update the path) |
+| `profile.resumeUrl` | `data/portfolio.js` | Either an external URL (e.g. a Google Drive link — opens in a new tab) or a local path like `/resume.pdf` for a file dropped in `public/` (offered as a download) |
 | `profile.githubUsername` / `NEXT_PUBLIC_GITHUB_USERNAME` | `.env.local` | Powers the live Projects section (see below) |
 | `seo.siteUrl` / `NEXT_PUBLIC_SITE_URL` | `.env.local` | Used for Open Graph tags, JSON-LD, sitemap, robots.txt |
 | `seo.ogImage` | `data/portfolio.js` + `public/` | Add a real 1200×630 image to `public/og-image.png` |

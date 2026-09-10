@@ -2,6 +2,8 @@ import { hero, profile } from "@/data/portfolio";
 import { Reveal } from "@/components/Reveal";
 
 export function Hero() {
+  const resumeIsExternal = /^https?:\/\//i.test(profile.resumeUrl || "");
+
   return (
     <section id="top" className="relative overflow-hidden border-b border-line paper-texture">
       <div className="container relative grid max-w-content gap-16 py-24 sm:py-32 lg:grid-cols-[1fr_auto] lg:items-start lg:py-40">
@@ -78,10 +80,12 @@ export function Hero() {
             {profile.resumeUrl && (
               <a
                 href={profile.resumeUrl}
-                download
+                {...(resumeIsExternal
+                  ? { target: "_blank", rel: "noopener noreferrer" }
+                  : { download: true })}
                 className="inline-flex items-center gap-2 rounded-full bg-accent-strong px-5 py-2 text-sm font-medium text-bg transition-opacity hover:opacity-90"
               >
-                Download Résumé
+                {resumeIsExternal ? "View Résumé" : "Download Résumé"}
               </a>
             )}
           </div>

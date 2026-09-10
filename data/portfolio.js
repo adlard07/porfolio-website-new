@@ -26,7 +26,9 @@ export const profile = {
   // Set to null to hide the availability pill entirely.
   availability: "Open to new opportunities", // TODO — set to null to hide
   email: "adelarddcunha07@gmail.com",
-  resumeUrl: "/resume.pdf",
+  // A local path (e.g. "/resume.pdf" in /public) OR an external URL. An
+  // external URL opens in a new tab; a local path is offered as a download.
+  resumeUrl: "https://drive.google.com/drive/u/1/folders/12CWy-Si8tYED2zE5yPW_yZxolwIsCUJl",
   social: {
     github: "https://github.com/adlard07",
     linkedin: "https://www.linkedin.com/in/adelard-dcunha-6186b0216",
@@ -58,8 +60,8 @@ export const seo = {
 };
 
 export const hero = {
-  eyebrow: "Portfolio & Career Profile",
-  headline: "Generative and agentic AI, built to hold up in production.",
+  eyebrow: "Portfolio",
+  headline: "AI/ML engineer & Data Scientist",
   intro:
     "I'm an AI/ML engineer working on generative and agentic systems — multi-agent platforms that let people query their own data in plain language, RAG pipelines over documents and video, and the chat and voice layers sitting on top of them. A good share of the work is the part nobody demos: sandboxing what agents write, keeping every answer traceable to a source, and watching models for drift after they ship.",
   scrollLabel: "Scroll to explore",
@@ -94,41 +96,48 @@ export const highlights = [
 
 export const skills = [
   {
-    category: "Agentic AI",
+    category: "Agentic & Generative AI",
     items: [
-      "Multi-agent systems",
-      "Agent planning & intent decomposition",
-      "Semantic memory",
-      "Tool use & tool generation",
-      "Sandboxed execution",
-      "Guardrails",
-      "LangGraph",
-    ],
-  },
-  {
-    category: "Generative AI & LLMs",
-    items: [
-      "RAG",
-      "Prompt engineering & evaluation",
-      "Fine-tuning",
-      "Document understanding",
+      "Retrieval Augmented Generation (RAG)",
+      "Agentic Workflows, Chatbots",
+      "Prompt Engineering (Chain Of Thoughts, Few Shots, Zero Shot, ReAct Prompting, Guardrails) ",
       "Conversational AI",
+      "LLM Harnessing",
       "Quantization",
-      "Inference & cost optimization",
+      "Paged Attention",
+      "KV Caching",
+      "Flash Attention",
+      "Chunking",
+      "Semantic Search",
+      "Inference Optimization",
+      "Knowledge Distillation",
+      "Cost Reduction & Inference Optimization",
     ],
   },
   {
     category: "Retrieval & Storage",
-    items: ["Pinecone", "ChromaDB", "Neo4j knowledge graphs", "Redis", "PostgreSQL", "recall@k evaluation"],
+    items: [
+      "Pinecone",
+      "ChromaDB",
+      "Neo4j knowledge graphs",
+      "Redis",
+      "PostgreSQL",
+      "recall@k evaluation"],
   },
   {
     category: "ML, Deep Learning & NLP",
     items: [
-      "Classification & regression",
-      "Clustering & anomaly detection",
-      "Time series forecasting",
-      "Speech-to-text",
-      "Feature engineering",
+      "Supervised Learning (Regression and Classification)",
+      "Unsupervised Learning (Clustering, Dimensionality Reduction, Association Rules, Anomaly Detection)",
+      "Reinforcement Learning (Model Free, Policy Based)",
+      "Semi-Supervised Learning",
+      "Time Series Forecasting (RNN / GRU / LSTM)",
+      "Transformers",
+      "Feature Engineering",
+      "Model Evaluation & Testing",
+      "Applied Statistics",
+      "Probabilistic Modeling",
+      "Hypothesis Testing",
     ],
   },
   {
