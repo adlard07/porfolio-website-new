@@ -22,7 +22,7 @@ export const profile = {
     .toUpperCase(),
   title: "AI/ML Engineer",
   tagline: "Building generative and agentic AI that runs in production — not just in demos.",
-  location: "Mumbai, India", // TODO: confirm — inferred from your education history
+  location: "Pune | Mumbai | Bangalore, India", // TODO: confirm — inferred from your education history
   // Set to null to hide the availability pill entirely.
   availability: "Open to new opportunities", // TODO — set to null to hide
   email: "adelarddcunha07@gmail.com",
@@ -32,7 +32,7 @@ export const profile = {
   social: {
     github: "https://github.com/adlard07",
     linkedin: "https://www.linkedin.com/in/adelard-dcunha-6186b0216",
-    website: "https://adlard.vercel.app",
+    medium: "https://medium.com/@adelarddcunha07",
     twitter: "https://x.com/BotlordWithB",
     reddit: "https://www.reddit.com/user/Vast_Excitement_945/",
     stackoverflow: "https://stackoverflow.com/users/23564658/adlard",
@@ -142,7 +142,12 @@ export const skills = [
   },
   {
     category: "Languages & Frameworks",
-    items: ["Python", "SQL", "TensorFlow", "Keras", "scikit-learn", "Hugging Face Transformers", "Pandas", "NumPy", "Node.js"],
+    items: [
+      "Python",
+      "SQL",
+      "TensorFlow",
+      "Keras",
+      "scikit-learn", "Hugging Face Transformers", "Pandas", "NumPy", "Node.js"],
   },
   {
     category: "Data & Infrastructure",
