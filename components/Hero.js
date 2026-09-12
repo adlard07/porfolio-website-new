@@ -114,11 +114,11 @@ export function Hero() {
             src="/self-1.jpeg"
             alt={profile.name}
             width={800}
-            height={1240}
-            sizes="380px"
+            height={1200}
+            sizes="500px"
             quality={90}
             priority
-            className="h-auto max-h-[500px] w-auto rounded-3xl border border-line-strong"
+            className="w-auto rounded-3xl border border-line-strong"
           />
         </Reveal>
       </div>
