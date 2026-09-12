@@ -2,12 +2,12 @@
  * Central portfolio configuration.
  *
  * This is the single source of truth for every piece of career content
- * rendered on the page. Components never hard-code copy — they read it
+ * rendered on the page. Components never hard-code copy: they read it
  * from here. Update this file to make the site yours; you should not
  * need to touch component code for routine content changes.
  *
  * Content below is sourced from Adelard's résumé (Adelard_Dcunha_AI_ML.pdf).
- * Remaining "TODO" markers are genuinely open — things the résumé doesn't
+ * Remaining "TODO" markers are genuinely open: things the résumé doesn't
  * specify (a public-facing location line, an OG image, etc).
  */
 
@@ -21,10 +21,10 @@ export const profile = {
     .slice(0, 2)
     .toUpperCase(),
   title: "AI/ML Engineer",
-  tagline: "Building generative and agentic AI that runs in production — not just in demos.",
-  location: "Maharashtra, India", // TODO: confirm — inferred from your education history
+  tagline: "Building generative and agentic AI that runs in production: not just in demos.",
+  location: "Maharashtra, India", // TODO: confirm: inferred from your education history
   // Set to null to hide the availability pill entirely.
-  availability: "Open to new opportunities", // TODO — set to null to hide
+  availability: "Open to new opportunities", // TODO: set to null to hide
   email: "adelarddcunha07@gmail.com",
   // A local path (e.g. "/resume.pdf" in /public) OR an external URL. An
   // external URL opens in a new tab; a local path is offered as a download.
@@ -45,7 +45,7 @@ export const profile = {
 };
 
 export const seo = {
-  siteName: `${profile.name} — Portfolio`,
+  siteName: `${profile.name}: Portfolio`,
   title: `${profile.name} | ${profile.title}`,
   description: profile.tagline,
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://adlard.vercel.app",
@@ -77,23 +77,23 @@ export const about = {
   paragraphs: [
     "I build generative and agentic AI systems that run in production. At EduvanceAI, that's meant multi-agent platforms that let consultants query their own datasets in plain language, RAG pipelines spanning over a thousand hours of video and thousands of documents, and the chat and voice layers built on top of both.",
     "A good share of the work is the part nobody demos: sandboxing code the agents write, keeping every answer traceable back to a source page or timestamp, and watching models for drift once they're live. I care as much about the guardrails as the model itself.",
-    "Outside of agentic and generative work, I've built a real-time card fraud detection service scoring transactions inline under 40ms, and hierarchical demand forecasting for multi-store retail — my closest brushes with BFSI and traditional MLOps respectively.",
+    "Outside of agentic and generative work, I've built a real-time card fraud detection service scoring transactions inline under 40ms, and hierarchical demand forecasting for multi-store retail: my closest brushes with BFSI and traditional MLOps respectively.",
   ],
   strengths: [
     "Multi-agent systems & agentic orchestration",
     "RAG architecture & retrieval evaluation",
-    "Production MLOps — drift detection, monitoring, safe rollout",
+    "Production MLOps: drift detection, monitoring, safe rollout",
     "Applied deep learning, NLP & speech",
   ],
   focusAreas: ["Generative AI", "Agentic systems", "RAG & retrieval", "MLOps & applied ML"],
 };
 
-// Only entries with a non-empty `value` are rendered — remove or blank
+// Only entries with a non-empty `value` are rendered: remove or blank
 // out anything that doesn't apply to you yet.
 export const highlights = [
-  { label: "Years of experience", value: "3", suffix: "+" },
-  { label: "Enterprise clients served", value: "4", suffix: "" },
-  { label: "Technologies used", value: "30", suffix: "+" },
+  { label: "Years of experience", value: "1.5", suffix: "+" },
+  { label: "Outlets optimized", value: "70", suffix: "" },
+  { label: "Technologies used", value: "40", suffix: "+" },
   { label: "Certifications", value: "2", suffix: "" },
   { label: "Publications", value: "1", suffix: "" },
 ];
@@ -183,15 +183,13 @@ export const experience = [
     start: "Feb 2025",
     end: "Present",
     type: "Full-time",
-    summary:
-      "Building agentic and generative AI products end-to-end — RAG and multi-agent systems, the retrieval and infrastructure under them, and the real-time monitoring that keeps them reliable.",
     achievements: [
-      "Talk2Data — built an agentic LLM system letting consultants query structured data in plain language or speech, fully automating feature engineering, EDA, and analysis; used RAG + MemPalace for dynamic, semantic context fetching to cut token use and inference cost ~95%; added a ReAct-based intent-decomposition agent that splits queries into sub-tasks and routes them correctly; designed a synchronous tool generator that raised output consistency on repeated queries from ~65% to 100%; hardened the system with a Docker sandbox and static guardrails against unsafe code; split it into independently scalable Kafka services (sandbox, intent, tools, etc.), hitting 99% accurate answers; and shipped a Next.js chatbot with live socket streaming so users can watch the agent's reasoning in real time",
-      "Virtual Coach — built a multimodal RAG app returning the exact video timestamp and manual page a field technician needs; chunked videos into 10-second overlapping segments with frame-level breakdown and used hybrid dense + BM25 indexing and reranking, applying the same 50-token overlapping-window approach to documents for consistent ranking; used Kafka to fan out queries and merge results from both modalities asynchronously; switched from OpenAI embeddings to a self-hosted, open-source quantized multilingual model (AkshitaS/bhasha-embed-v0) after benchmarking, dropping monthly embedding cost from $512 to ~$80; and built an audio library (VAD, noise cancellation, silence trimming, thinking/breath-pause detection) that improved throughput 40% and cut cost per minute ~60%",
-      "Sales Copilot — created a GenAI sales-lifecycle tool that plans monthly dealer visits, recommends pitches from past visits, suggests products, and turns post-visit audio notes into the next plan; built a journey planner solving multi-constraint TSP routing across 70 outlets in South & East India, cutting travel distance 70% while lifting coverage 50%; added admin-managed dealer targets, GenAI pitch generation from visit history, and a hybrid collaborative + content-based recommender combining time-series forecasting, dealer clustering, and TSP, plus audio-derived Next Best Actions; and built a real-time error-logging and model-monitoring service that cut downtime 99% (from constant to about once a week) and doubled the speed of root-cause resolution",
+      "Talk2Data: built an agentic LLM system letting consultants query structured data in plain language or speech, fully automating feature engineering, EDA, and analysis; used RAG + MemPalace for dynamic, semantic context fetching to cut token use and inference cost ~95%; added a ReAct-based intent-decomposition agent that splits queries into sub-tasks and routes them correctly; designed a synchronous tool generator that raised output consistency on repeated queries from ~65% to 100%; hardened the system with a Docker sandbox and static guardrails against unsafe code; split it into independently scalable Kafka services (sandbox, intent, tools, etc.), hitting 99% accurate answers; and shipped a Next.js chatbot with live socket streaming so users can watch the agent's reasoning in real time",
+      "Virtual Coach: built a multimodal RAG app returning the exact video timestamp and manual page a field technician needs; chunked videos into 10-second overlapping segments with frame-level breakdown and used hybrid dense + BM25 indexing and reranking, applying the same 50-token overlapping-window approach to documents for consistent ranking; used Kafka to fan out queries and merge results from both modalities asynchronously; switched from OpenAI embeddings to a self-hosted, open-source quantized multilingual model (AkshitaS/bhasha-embed-v0) after benchmarking, dropping monthly embedding cost from $512 to ~$80; and built an audio library (VAD, noise cancellation, silence trimming, thinking/breath-pause detection) that improved throughput 40% and cut cost per minute ~60%",
+      "Sales Copilot: created a GenAI sales-lifecycle tool that plans monthly dealer visits, recommends pitches from past visits, suggests products, and turns post-visit audio notes into the next plan; built a journey planner solving multi-constraint TSP routing across 70 outlets in South & East India, cutting travel distance 70% while lifting coverage 50%; added admin-managed dealer targets, GenAI pitch generation from visit history, and a hybrid collaborative + content-based recommender combining time-series forecasting, dealer clustering, and TSP, plus audio-derived Next Best Actions; and built a real-time error-logging and model-monitoring service that cut downtime 99% (from constant to about once a week) and doubled the speed of root-cause resolution",
     ],
     responsibilities: [
-      "LMS (Learning Management System) — a GenAI-powered platform for scenario simulations (e.g. manager-to-employee confrontations, sales and marketing scenarios); built role-based access control (Super Admin / Admin / User), an SMTP notification microservice, and the Eduvance.ai marketing site for a soft-skills LMS with embedded voice and chat AI",
+      "LMS (Learning Management System): a GenAI-powered platform for scenario simulations (e.g. manager-to-employee confrontations, sales and marketing scenarios); built role-based access control (Super Admin / Admin / User), an SMTP notification microservice, and the Eduvance.ai marketing site for a soft-skills LMS with embedded voice and chat AI",
     ],
     technologies: ["RAG", "Agentic Workflows", "Apache Kafka", "Docker", "Next.js", "Hybrid Retrieval (Dense + BM25)", "Time-Series Forecasting", "TSP Optimization", "RBAC"],
   },
@@ -202,20 +200,18 @@ export const experience = [
     start: "March 2025",
     end: "December 2025",
     type: "Internship",
-    summary:
-      "Built a natural-language-to-SQL interface and the ETL pipelines feeding it, for financial reporting and business intelligence.",
     achievements: [
-      "Text-To-SQL — built an NLP interface on PostgreSQL converting natural-language questions into SQL for financial reporting and business dashboards; pitched the POC to stakeholders and it was later adopted full-time; used an LLM layer to translate requests into SQL, fetch data, and render results in a React.js app; added JWT-based auth to scope data access by user role/department; and implemented SQL validation and guardrails against unsafe queries and prompt injection, lifting data-fetch accuracy to 99%",
+      "Text-To-SQL: built an NLP interface on PostgreSQL converting natural-language questions into SQL for financial reporting and business dashboards; pitched the POC to stakeholders and it was later adopted full-time; used an LLM layer to translate requests into SQL, fetch data, and render results in a React.js app; added JWT-based auth to scope data access by user role/department; and implemented SQL validation and guardrails against unsafe queries and prompt injection, lifting data-fetch accuracy to 99%",
     ],
     responsibilities: [
-      "ETL & Data Study — built web-scraping pipelines with Scrapy and Selenium to collect, clean, normalize, and stage external financial data for predictive modeling; scheduled weekly, monthly, and yearly extraction jobs with Apache Airflow; built automated data-quality checks for both scraped and database data, loading valid records into MongoDB and quarantining/alerting on failures",
+      "ETL & Data Study: built web-scraping pipelines with Scrapy and Selenium to collect, clean, normalize, and stage external financial data for predictive modeling; scheduled weekly, monthly, and yearly extraction jobs with Apache Airflow; built automated data-quality checks for both scraped and database data, loading valid records into MongoDB and quarantining/alerting on failures",
     ],
     technologies: ["PostgreSQL", "LLM (Text-to-SQL)", "React.js", "JWT Auth", "Scrapy", "Selenium", "Apache Airflow", "MongoDB"],
   },
 ];
 
 // Repository names (as they appear on GitHub) to prioritise when ranking
-// projects — useful for pinning your best work regardless of star count.
+// projects: useful for pinning your best work regardless of star count.
 export const featuredRepoNames = [];
 
 // Rendered only if the live GitHub fetch fails or returns nothing. Drawn
@@ -239,7 +235,7 @@ export const fallbackProjects = [
   {
     name: "autonomous-voice-intake-agent",
     description:
-      "An autonomous voice agent that answers the phone for service providers — transcribes and classifies intent live, resolves or escalates the issue, and books the visit straight from the transcript with no human in the loop.",
+      "An autonomous voice agent that answers the phone for service providers: transcribes and classifies intent live, resolves or escalates the issue, and books the visit straight from the transcript with no human in the loop.",
     html_url: "https://github.com/adlard07",
     homepage: "",
     language: "Python",
@@ -316,7 +312,7 @@ export const publications = [
     date: "",
     authors: ["Adelard D'Cunha"],
     description:
-      "On why audio signal quality — not the ASR model itself — is usually the real bottleneck in speech pipelines.",
+      "On why audio signal quality: not the ASR model itself: is usually the real bottleneck in speech pipelines.",
     url: "https://medium.com/@adelarddcunha07",
   },
 ];
@@ -335,7 +331,7 @@ export const achievements = [];
 //   },
 // ];
 
-// TODO: this section is still generic placeholder content — the résumé
+// TODO: this section is still generic placeholder content: the résumé
 // doesn't cover personal interests, so replace with the real thing before
 // publishing.
 export const beyondWork = {
