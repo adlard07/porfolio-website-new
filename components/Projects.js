@@ -17,7 +17,7 @@ export async function Projects() {
   return (
     <Section
       id="projects"
-      eyebrow="Selected Work"
+      // eyebrow="Selected Work"
       heading="Featured projects"
       description="Pulled directly from GitHub, favouring recent and starred work."
       tone="alt"

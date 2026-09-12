@@ -127,8 +127,8 @@ export function ConnectModal() {
                   {profile.social.github && (
                     <ContactRow label="GitHub" value="View profile" href={profile.social.github} external />
                   )}
-                  {profile.social.website && (
-                    <ContactRow label="Website" value="View site" href={profile.social.website} external />
+                  {profile.social.medium && (
+                    <ContactRow label="Medium" value="View profile" href={profile.social.medium} external />
                   )}
                   {profile.social.twitter && (
                     <ContactRow label="Twitter / X" value="View profile" href={profile.social.twitter} external />

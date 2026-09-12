@@ -8,7 +8,10 @@ export function Publications() {
   if (!publications || publications.length === 0) return null;
 
   return (
-    <Section id="publications" eyebrow="Publications" heading="Writing & research">
+    <Section
+      id="publications"
+      // eyebrow="Publications"
+      heading="Writing & research">
       <ol className="space-y-8">
         {publications.map((pub, index) => (
           <Reveal

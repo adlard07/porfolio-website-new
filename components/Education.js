@@ -6,7 +6,10 @@ export function Education() {
   if (!education || education.length === 0) return null;
 
   return (
-    <Section id="education" eyebrow="Education" heading="Academic background">
+    <Section
+      id="education"
+      // eyebrow="Education"
+      heading="Academic background">
       <ol className="space-y-10">
         {education.map((entry, index) => (
           <Reveal

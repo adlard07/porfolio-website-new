@@ -10,7 +10,6 @@ export function Section({
   id,
   eyebrow,
   heading,
-  description,
   children,
   className = "",
   tone = "default",
@@ -36,11 +35,6 @@ export function Section({
               >
                 {heading}
               </HeadingTag>
-            )}
-            {description && (
-              <p className="mt-4 text-base leading-relaxed text-ink-muted sm:text-lg">
-                {description}
-              </p>
             )}
           </Reveal>
         )}

@@ -7,13 +7,15 @@ export function Hero() {
 
   return (
     <section id="top" className="relative overflow-hidden border-b border-line paper-texture">
-      <div className="container relative grid max-w-content gap-16 py-24 sm:py-32 lg:grid-cols-[1fr_auto] lg:items-start lg:py-40">
+      <div className="container relative grid max-w-[88rem] gap-10 py-24 sm:py-32 lg:grid-cols-2 lg:items-center lg:gap-16 lg:py-40">
         <div>
-          <Reveal>
-            <p className="text-xs font-medium uppercase tracking-widest2 text-accent-strong">
-              {hero.eyebrow}
-            </p>
-          </Reveal>
+          {hero.eyebrow && (
+            <Reveal>
+              <p className="text-xs font-medium uppercase tracking-widest2 text-accent-strong">
+                {hero.eyebrow}
+              </p>
+            </Reveal>
+          )}
 
           <Reveal delay={100}>
             <h1 className="mt-6 max-w-3xl text-balance font-serif text-4xl leading-[1.1] text-ink sm:text-5xl lg:text-6xl">
@@ -28,7 +30,7 @@ export function Hero() {
           </Reveal>
 
           <Reveal delay={300}>
-            <p className="mt-6 max-w-2xl text-base leading-relaxed text-ink-muted sm:text-lg">
+            <p className="mt-6 max-w-2xl text-justify text-base leading-relaxed text-ink-muted sm:text-lg">
               {hero.intro}
             </p>
           </Reveal>
@@ -70,7 +72,7 @@ export function Hero() {
               </a>
               {profile.social.medium && (
                 <a
-                  href={profile.social.website}
+                  href={profile.social.medium}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-sm font-medium text-ink underline decoration-line-strong underline-offset-4 transition-colors hover:text-accent-strong hover:decoration-accent-strong"
@@ -93,18 +95,22 @@ export function Hero() {
           </Reveal>
         </div>
 
-        {/* <Reveal delay={250} className="hidden justify-self-end lg:block">
-          <div className="relative h-[178px] w-[178px] overflow-hidden border border-line-strong">
-            <Image
-              src="/self.jpeg"
-              alt={profile.name}
-              fill
-              sizes="178px"
-              priority
-              className="object-cover object-top"
-            />
-          </div>
-        </Reveal> */}
+        <Reveal delay={250} className="hidden lg:flex lg:justify-end">
+          {/* Capped to the text column's rendered height (measured ~518–
+              602px across breakpoints) so the portrait never reads taller
+              than the copy beside it; width follows from the photo's real
+              781x1040 ratio, so nothing is cropped or distorted. */}
+          <Image
+            src="/self-2.jpeg"
+            alt={profile.name}
+            width={781}
+            height={1040}
+            sizes="380px"
+            quality={90}
+            priority
+            className="h-auto max-h-[500px] w-auto rounded-3xl border border-line-strong"
+          />
+        </Reveal>
       </div>
 
       <a

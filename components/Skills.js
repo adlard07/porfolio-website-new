@@ -6,9 +6,8 @@ export function Skills() {
   return (
     <Section
       id="skills"
-      eyebrow="Skills & Expertise"
-      heading="Capabilities, organised by domain"
-      description="Grouped by area rather than ranked by percentage — a more honest picture of where I contribute."
+      eyebrow=""
+      heading="Skills & Expertise"
     >
       <div className="grid gap-x-10 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
         {skills.map((group, index) => (

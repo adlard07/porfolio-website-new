@@ -6,7 +6,11 @@ export function Certifications() {
   if (!certifications || certifications.length === 0) return null;
 
   return (
-    <Section id="certifications" eyebrow="Certifications" heading="Credentials" tone="alt">
+    <Section
+      id="certifications"
+      // eyebrow="Certifications"
+      heading="Certification & Credentials"
+      tone="alt">
       <ul className="divide-y divide-line border-y border-line">
         {certifications.map((cert, index) => (
           <Reveal key={cert.name} delay={index * 70} as="li" className="py-5">

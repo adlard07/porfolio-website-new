@@ -22,7 +22,7 @@ export const profile = {
     .toUpperCase(),
   title: "AI/ML Engineer",
   tagline: "Building generative and agentic AI that runs in production — not just in demos.",
-  location: "Pune | Mumbai | Bangalore, India", // TODO: confirm — inferred from your education history
+  location: "Maharashtra, India", // TODO: confirm — inferred from your education history
   // Set to null to hide the availability pill entirely.
   availability: "Open to new opportunities", // TODO — set to null to hide
   email: "adelarddcunha07@gmail.com",
@@ -60,16 +60,18 @@ export const seo = {
 };
 
 export const hero = {
-  eyebrow: "Portfolio",
+  // Set to a string to show a small label above the headline; leave empty
+  // to hide it entirely.
+  eyebrow: "",
   headline: "AI/ML engineer & Data Scientist",
   intro:
-    "I'm an AI/ML engineer working on generative and agentic systems — multi-agent platforms that let people query their own data in plain language, RAG pipelines over documents and video, and the chat and voice layers sitting on top of them. A good share of the work is the part nobody demos: sandboxing what agents write, keeping every answer traceable to a source, and watching models for drift after they ship.",
+    "I'm an AI/ML engineer working on generative and agentic systems, multi-agent platforms that let people query their own data in plain language, RAG pipelines over documents and video, and the chat and voice layers sitting on top of them. A good share of the work is the part nobody demos: sandboxing what agents write, keeping every answer traceable to a source, and watching models for drift after they ship.",
   scrollLabel: "Scroll to explore",
 };
 
 export const about = {
-  eyebrow: "About",
-  heading: "A brief professional summary",
+  // eyebrow: "A brief professional summary",
+  heading: "About",
   paragraphs: [
     "I build generative and agentic AI systems that run in production. At EduvanceAI, that's meant multi-agent platforms that let consultants query their own datasets in plain language, RAG pipelines spanning over a thousand hours of video and thousands of documents, and the chat and voice layers built on top of both.",
     "A good share of the work is the part nobody demos: sandboxing code the agents write, keeping every answer traceable back to a source page or timestamp, and watching models for drift once they're live. I care as much about the guardrails as the model itself.",
@@ -100,18 +102,15 @@ export const skills = [
     items: [
       "Retrieval Augmented Generation (RAG)",
       "Agentic Workflows, Chatbots",
-      "Prompt Engineering (Chain Of Thoughts, Few Shots, Zero Shot, ReAct Prompting, Guardrails) ",
+      "Prompt Engineering (Chain Of Thoughts, Few Shots, Zero Shot, ReAct Prompting, Guardrails)",
       "Conversational AI",
       "LLM Harnessing",
       "Quantization",
       "Paged Attention",
       "KV Caching",
       "Flash Attention",
-      "Chunking",
-      "Semantic Search",
-      "Inference Optimization",
       "Knowledge Distillation",
-      "Cost Reduction & Inference Optimization",
+      "Inference & Cost Optimization",
     ],
   },
   {
@@ -122,7 +121,10 @@ export const skills = [
       "Neo4j knowledge graphs",
       "Redis",
       "PostgreSQL",
-      "recall@k evaluation"],
+      "Chunking",
+      "Semantic Search",
+      "recall@k evaluation",
+    ],
   },
   {
     category: "ML, Deep Learning & NLP",
@@ -147,7 +149,12 @@ export const skills = [
       "SQL",
       "TensorFlow",
       "Keras",
-      "scikit-learn", "Hugging Face Transformers", "Pandas", "NumPy", "Node.js"],
+      "scikit-learn",
+      "Hugging Face Transformers",
+      "Pandas",
+      "NumPy",
+      "Node.js",
+    ],
   },
   {
     category: "Data & Infrastructure",
@@ -353,13 +360,13 @@ export const achievements = [];
 // doesn't cover personal interests, so replace with the real thing before
 // publishing.
 export const beyondWork = {
-  eyebrow: "Beyond the Desk",
+  // eyebrow: "Beyond the Desk",
   heading: "A little more personal",
   intro: "Work is one part of the picture. Here's a little of what fills the rest of it.",
   items: [
     { label: "Outside of work", description: "Long-distance cycling and slow, deliberate cooking." },
-    { label: "Cuisine", description: "Coastal Konkani food, and a long-running fondness for good filter coffee." },
-    { label: "Sport", description: "Plays badminton or football on weekends." },
+    { label: "Cuisine", description: "Coastal Konkani food, and a long-running fondness for good masala tea." },
+    { label: "Sport", description: "Love for badminton or football stays constant." },
     { label: "Reading", description: "Currently reading `100 ways to survive in the wild`" },
     { label: "Travel", description: "Prefers slow travel: a week in one place over five cities in five days." },
     // { label: "A small fact", description: "" },

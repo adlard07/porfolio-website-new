@@ -6,7 +6,7 @@ export function Experience() {
   return (
     <Section
       id="experience"
-      eyebrow="Professional Experience"
+      // eyebrow="Professional Experience"
       heading="Where I've worked"
       tone="alt"
     >

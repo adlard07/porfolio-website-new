@@ -78,7 +78,7 @@ const personJsonLd = {
   sameAs: [
     profile.social.github,
     profile.social.linkedin,
-    profile.social.website,
+    profile.social.medium,
     profile.social.twitter,
     profile.social.reddit,
     profile.social.stackoverflow,
