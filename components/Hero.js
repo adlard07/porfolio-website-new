@@ -62,6 +62,48 @@ export function Hero() {
               >
                 GitHub
               </a>
+              {profile.social.leetcode && (
+                <a
+                  href={profile.social.leetcode}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-sm font-medium text-ink underline decoration-line-strong underline-offset-4 transition-colors hover:text-accent-strong hover:decoration-accent-strong"
+                >
+                  LeetCode
+                </a>
+              )}
+              {profile.social.kaggle && (
+                <a
+                  href={profile.social.kaggle}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-sm font-medium text-ink underline decoration-line-strong underline-offset-4 transition-colors hover:text-accent-strong hover:decoration-accent-strong"
+                >
+                  Kaggle
+                </a>
+              )}
+
+              {profile.social.stackoverflow && (
+                <a
+                  href={profile.social.stackoverflow}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-sm font-medium text-ink underline decoration-line-strong underline-offset-4 transition-colors hover:text-accent-strong hover:decoration-accent-strong"
+                >
+                  Stack Overflow
+                </a>
+              )}
+
+              {profile.social.twitter && (
+                <a
+                  href={profile.social.twitter}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-sm font-medium text-ink underline decoration-line-strong underline-offset-4 transition-colors hover:text-accent-strong hover:decoration-accent-strong"
+                >
+                  Twitter
+                </a>
+              )}
               <a
                 href={profile.social.linkedin}
                 target="_blank"
@@ -78,16 +120,6 @@ export function Hero() {
                   className="inline-flex items-center gap-2 text-sm font-medium text-ink underline decoration-line-strong underline-offset-4 transition-colors hover:text-accent-strong hover:decoration-accent-strong"
                 >
                   Medium
-                </a>
-              )}
-              {profile.social.leetcode && (
-                <a
-                  href={profile.social.leetcode}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-sm font-medium text-ink underline decoration-line-strong underline-offset-4 transition-colors hover:text-accent-strong hover:decoration-accent-strong"
-                >
-                  LeetCode
                 </a>
               )}
               {profile.resumeUrl && (

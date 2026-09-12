@@ -16,7 +16,7 @@ export function Experience() {
             <div className="grid gap-6 border-t border-line pt-8 lg:grid-cols-[220px_1fr]">
               <div>
                 <p className="text-sm font-medium text-ink-muted">
-                  {role.start} — {role.end}
+                  {role.start} to {role.end}
                 </p>
                 {role.location && <p className="mt-1 text-sm text-ink-faint">{role.location}</p>}
                 {role.type && (

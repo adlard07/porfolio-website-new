@@ -31,12 +31,13 @@ export const profile = {
   resumeUrl: "https://drive.google.com/drive/u/1/folders/12CWy-Si8tYED2zE5yPW_yZxolwIsCUJl",
   social: {
     github: "https://github.com/adlard07",
+    leetcode: "https://leetcode.com/u/adelarddcunha07/",
+    kaggle: "https://www.kaggle.com/adelard123",
     linkedin: "https://www.linkedin.com/in/adelard-dcunha-6186b0216",
     medium: "https://medium.com/@adelarddcunha07",
     twitter: "https://x.com/BotlordWithB",
     reddit: "https://www.reddit.com/user/Vast_Excitement_945/",
     stackoverflow: "https://stackoverflow.com/users/23564658/adlard",
-    leetcode: "https://leetcode.com/u/adelarddcunha07/",
   },
   // Used by the GitHub integration (lib/github.js). Prefer setting
   // NEXT_PUBLIC_GITHUB_USERNAME in .env.local; this is the fallback.
@@ -177,62 +178,39 @@ export const skills = [
 export const experience = [
   {
     company: "EduvanceAI",
-    role: "Software Development Engineer",
+    role: "Software Development & AI Engineer",
     location: "India",
     start: "Feb 2025",
     end: "Present",
     type: "Full-time",
     summary:
-      "Building generative and agentic AI systems that run in production — multi-agent analytics, RAG pipelines over documents and video, and the chat and voice layers on top of them.",
+      "Building agentic and generative AI products end-to-end — RAG and multi-agent systems, the retrieval and infrastructure under them, and the real-time monitoring that keeps them reliable.",
     achievements: [
-      "Built a multi-agent analytics platform letting consultants query their own datasets in plain English, with schema context from a custom data-dictionary layer and conversation memory — now used by 100+ people across 4 enterprise clients",
-      "Wrote a tool generator that writes and sandboxes Python tools on the fly; decomposing each query into intents took output consistency on repeated questions from 62% to 100%, with static checks preventing agent-written code from executing anything arbitrary",
-      "Built RAG pipelines over 1,000+ hours of video and 1,200 documents (Neo4j knowledge graph, Pinecone vectors) — video answers return with timestamps and document answers with page numbers, so answers stay source-traceable",
-      "Researched and built an audio-processing library for the voice assistant (VAD, silence trimming, noise cancellation, GPU acceleration), lifting throughput 40% and cutting cost per minute ~60%, backed by WER-vs-latency benchmarking",
-      "Cut embedding spend from $512/month to ~$80 by benchmarking a self-hosted quantized multilingual model against the OpenAI API on recall@k and WER, then migrating Hindi, English, and Hinglish retrieval to it",
-      "Shipped Sales Copilot — forecasting, dealer clustering, and TSP route optimization generating monthly journey plans for 70 outlets — cutting planned travel distance 70% and lifting visit coverage 50%",
-      "Built a real-time error-logging and model-monitoring microservice that cut downtime 99%, from near-constant to about once a week, roughly halving time-to-root-cause",
+      "Talk2Data — built an agentic LLM system letting consultants query structured data in plain language or speech, fully automating feature engineering, EDA, and analysis; used RAG + MemPalace for dynamic, semantic context fetching to cut token use and inference cost ~95%; added a ReAct-based intent-decomposition agent that splits queries into sub-tasks and routes them correctly; designed a synchronous tool generator that raised output consistency on repeated queries from ~65% to 100%; hardened the system with a Docker sandbox and static guardrails against unsafe code; split it into independently scalable Kafka services (sandbox, intent, tools, etc.), hitting 99% accurate answers; and shipped a Next.js chatbot with live socket streaming so users can watch the agent's reasoning in real time",
+      "Virtual Coach — built a multimodal RAG app returning the exact video timestamp and manual page a field technician needs; chunked videos into 10-second overlapping segments with frame-level breakdown and used hybrid dense + BM25 indexing and reranking, applying the same 50-token overlapping-window approach to documents for consistent ranking; used Kafka to fan out queries and merge results from both modalities asynchronously; switched from OpenAI embeddings to a self-hosted, open-source quantized multilingual model (AkshitaS/bhasha-embed-v0) after benchmarking, dropping monthly embedding cost from $512 to ~$80; and built an audio library (VAD, noise cancellation, silence trimming, thinking/breath-pause detection) that improved throughput 40% and cut cost per minute ~60%",
+      "Sales Copilot — created a GenAI sales-lifecycle tool that plans monthly dealer visits, recommends pitches from past visits, suggests products, and turns post-visit audio notes into the next plan; built a journey planner solving multi-constraint TSP routing across 70 outlets in South & East India, cutting travel distance 70% while lifting coverage 50%; added admin-managed dealer targets, GenAI pitch generation from visit history, and a hybrid collaborative + content-based recommender combining time-series forecasting, dealer clustering, and TSP, plus audio-derived Next Best Actions; and built a real-time error-logging and model-monitoring service that cut downtime 99% (from constant to about once a week) and doubled the speed of root-cause resolution",
     ],
     responsibilities: [
-      "Built the Next.js chat frontend for the multi-agent platform",
-      "Added collaborative filtering for next-best-product and a Next Best Action feature pulled from call audio",
-      "Earlier on: role-based access control (super admin, admin, user), an SMTP notification service, and the Eduvance.ai marketing site for a soft-skills LMS with voice and chat built in",
+      "LMS (Learning Management System) — a GenAI-powered platform for scenario simulations (e.g. manager-to-employee confrontations, sales and marketing scenarios); built role-based access control (Super Admin / Admin / User), an SMTP notification microservice, and the Eduvance.ai marketing site for a soft-skills LMS with embedded voice and chat AI",
     ],
-    technologies: ["LangGraph", "RAG", "Pinecone", "Neo4j", "Redis", "PostgreSQL", "PySpark", "AWS (EC2, SageMaker)", "MLflow", "Next.js", "Python"],
+    technologies: ["RAG", "Agentic Workflows", "Apache Kafka", "Docker", "Next.js", "Hybrid Retrieval (Dense + BM25)", "Time-Series Forecasting", "TSP Optimization", "RBAC"],
   },
   {
     company: "Forbes Advisor",
-    role: "Data & Analytics Intern",
+    role: "Data Analyst Intern",
     location: "",
-    start: "Apr 2024",
-    end: "Nov 2024",
+    start: "March 2025",
+    end: "December 2025",
     type: "Internship",
     summary:
-      "Built retrieval and data-pipeline tooling for querying and normalizing large-scale global financial and linguistic datasets.",
+      "Built a natural-language-to-SQL interface and the ETL pipelines feeding it, for financial reporting and business intelligence.",
     achievements: [
-      "Designed a RAG chatbot POC for querying complex global quantitative and linguistic datasets, now used by the DPR team for financial reporting and business intelligence",
+      "Text-To-SQL — built an NLP interface on PostgreSQL converting natural-language questions into SQL for financial reporting and business dashboards; pitched the POC to stakeholders and it was later adopted full-time; used an LLM layer to translate requests into SQL, fetch data, and render results in a React.js app; added JWT-based auth to scope data access by user role/department; and implemented SQL validation and guardrails against unsafe queries and prompt injection, lifting data-fetch accuracy to 99%",
     ],
     responsibilities: [
-      "Built a distributed web-scraping and transformation pipeline (Scrapy, Selenium, BeautifulSoup, automated parsers) to normalize external financial and text data for downstream modeling",
+      "ETL & Data Study — built web-scraping pipelines with Scrapy and Selenium to collect, clean, normalize, and stage external financial data for predictive modeling; scheduled weekly, monthly, and yearly extraction jobs with Apache Airflow; built automated data-quality checks for both scraped and database data, loading valid records into MongoDB and quarantining/alerting on failures",
     ],
-    technologies: ["RAG", "Scrapy", "Selenium", "BeautifulSoup", "Python"],
-  },
-  {
-    company: "Plan My Venture Pvt. Ltd.",
-    role: "Data Scientist Intern",
-    location: "",
-    start: "Mar 2023",
-    end: "Dec 2023",
-    type: "Internship",
-    summary: "Applied statistical and deep learning models to financial forecasting and unstructured text analysis.",
-    achievements: [
-      "Built predictive models with 85%+ accuracy using regression, GARCH, and LSTM for financial forecasting and hypothesis-driven analysis",
-      "Fine-tuned BERT on domain-specific financial text to extract sentiment signals for unstructured data classification, outperforming prior manual benchmark approaches",
-    ],
-    responsibilities: [
-      "Performed EDA, feature selection, cross-validation, and hyperparameter tuning on historical financial data to improve production forecasting quality",
-    ],
-    technologies: ["Python", "GARCH", "LSTM", "BERT", "scikit-learn"],
+    technologies: ["PostgreSQL", "LLM (Text-to-SQL)", "React.js", "JWT Auth", "Scrapy", "Selenium", "Apache Airflow", "MongoDB"],
   },
 ];
 
