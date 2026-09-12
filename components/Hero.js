@@ -80,6 +80,16 @@ export function Hero() {
                   Medium
                 </a>
               )}
+              {profile.social.leetcode && (
+                <a
+                  href={profile.social.leetcode}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-sm font-medium text-ink underline decoration-line-strong underline-offset-4 transition-colors hover:text-accent-strong hover:decoration-accent-strong"
+                >
+                  LeetCode
+                </a>
+              )}
               {profile.resumeUrl && (
                 <a
                   href={profile.resumeUrl}
@@ -101,10 +111,10 @@ export function Hero() {
               than the copy beside it; width follows from the photo's real
               781x1040 ratio, so nothing is cropped or distorted. */}
           <Image
-            src="/self-2.jpeg"
+            src="/self-1.jpeg"
             alt={profile.name}
-            width={781}
-            height={1040}
+            width={800}
+            height={1240}
             sizes="380px"
             quality={90}
             priority

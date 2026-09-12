@@ -36,6 +36,7 @@ export const profile = {
     twitter: "https://x.com/BotlordWithB",
     reddit: "https://www.reddit.com/user/Vast_Excitement_945/",
     stackoverflow: "https://stackoverflow.com/users/23564658/adlard",
+    leetcode: "https://leetcode.com/u/adelarddcunha07/",
   },
   // Used by the GitHub integration (lib/github.js). Prefer setting
   // NEXT_PUBLIC_GITHUB_USERNAME in .env.local; this is the fallback.
