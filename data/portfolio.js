@@ -91,7 +91,6 @@ export const about = {
 // Only entries with a non-empty `value` are rendered: remove or blank
 // out anything that doesn't apply to you yet.
 export const highlights = [
-  { label: "Years of experience", value: "1.5", suffix: "+" },
   { label: "Outlets optimized", value: "70", suffix: "" },
   { label: "Technologies used", value: "40", suffix: "+" },
   { label: "Certifications", value: "2", suffix: "" },
