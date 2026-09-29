@@ -98,6 +98,7 @@ export const highlights = [
   { label: "Publications", value: "1", suffix: "" },
 ];
 
+
 export const skills = [
   {
     category: "Agentic & Generative AI",
