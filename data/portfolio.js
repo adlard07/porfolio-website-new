@@ -202,10 +202,10 @@ export const experience = [
     type: "Internship",
     achievements: [
       "Text-To-SQL: built an NLP interface on PostgreSQL converting natural-language questions into SQL for financial reporting and business dashboards; pitched the POC to stakeholders and it was later adopted full-time; used an LLM layer to translate requests into SQL, fetch data, and render results in a React.js app; added JWT-based auth to scope data access by user role/department; and implemented SQL validation and guardrails against unsafe queries and prompt injection, lifting data-fetch accuracy to 99%",
-    ],
-    responsibilities: [
       "ETL & Data Study: built web-scraping pipelines with Scrapy and Selenium to collect, clean, normalize, and stage external financial data for predictive modeling; scheduled weekly, monthly, and yearly extraction jobs with Apache Airflow; built automated data-quality checks for both scraped and database data, loading valid records into MongoDB and quarantining/alerting on failures",
     ],
+    // responsibilities: [
+    // ],
     technologies: ["PostgreSQL", "LLM (Text-to-SQL)", "React.js", "JWT Auth", "Scrapy", "Selenium", "Apache Airflow", "Databricks", "Excel", "MongoDB"],
   },
   {
