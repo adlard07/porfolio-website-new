@@ -197,8 +197,8 @@ export const experience = [
     company: "Forbes Advisor",
     role: "Data Analyst Intern",
     location: "",
-    start: "March 2025",
-    end: "December 2025",
+    start: "March 2024",
+    end: "December 2024",
     type: "Internship",
     achievements: [
       "Text-To-SQL: built an NLP interface on PostgreSQL converting natural-language questions into SQL for financial reporting and business dashboards; pitched the POC to stakeholders and it was later adopted full-time; used an LLM layer to translate requests into SQL, fetch data, and render results in a React.js app; added JWT-based auth to scope data access by user role/department; and implemented SQL validation and guardrails against unsafe queries and prompt injection, lifting data-fetch accuracy to 99%",
@@ -206,8 +206,45 @@ export const experience = [
     responsibilities: [
       "ETL & Data Study: built web-scraping pipelines with Scrapy and Selenium to collect, clean, normalize, and stage external financial data for predictive modeling; scheduled weekly, monthly, and yearly extraction jobs with Apache Airflow; built automated data-quality checks for both scraped and database data, loading valid records into MongoDB and quarantining/alerting on failures",
     ],
-    technologies: ["PostgreSQL", "LLM (Text-to-SQL)", "React.js", "JWT Auth", "Scrapy", "Selenium", "Apache Airflow", "MongoDB"],
+    technologies: ["PostgreSQL", "LLM (Text-to-SQL)", "React.js", "JWT Auth", "Scrapy", "Selenium", "Apache Airflow", "Databricks", "Excel", "MongoDB"],
   },
+  {
+    company: "Catalyst Management Services",
+    role: "Data Analyst Intern",
+    location: "Remote (Bangalore)",
+    start: "Janurary 2024",
+    end: "March 2024",
+    type: "Internship",
+    // achievements: [
+    //   "Text-To-SQL: built an NLP interface on PostgreSQL converting natural-language questions into SQL for financial reporting and business dashboards; pitched the POC to stakeholders and it was later adopted full-time; used an LLM layer to translate requests into SQL, fetch data, and render results in a React.js app; added JWT-based auth to scope data access by user role/department; and implemented SQL validation and guardrails against unsafe queries and prompt injection, lifting data-fetch accuracy to 99%",
+    // ],
+    responsibilities: [
+      "Increased data collection efficiency using Beautiful Soup, Parser and Selenium to streamline scraping processes from diverse sources by performing mass web scraping on over 250+ websites as data sources.", 
+      "Developed automated ETL pipelines, reducing data update processing time and enhancing data availability for analysis.", 
+      "Conducted rigorous and multiple levels/phases of data cleaning and validation with Pandas, ensuring dataset accuracy and reliability through well-documented protocols. Automated the whole process into a single system by the end of the sprint.",
+    ],
+    technologies: ["Python 3.9", "node.js", "Docker", "ngrok", "PostgreSQL", "LLM (Text-to-SQL)", "React.js", "Scrapy", "Selenium", "Bert-uncased", "Transformer", "Self-Attention", "MongoDB"],
+  },
+  
+  {
+    company: "Plan My Venture Pvt. Ltd.",
+    role: "Data Scientist Intern",
+    location: "Remote (Navi Mumbai)",
+    start: "March 2023",
+    end: "December 2023",
+    type: "Internship",
+    achievements: [
+      "Text-To-SQL: built an NLP interface on PostgreSQL converting natural-language questions into SQL for financial reporting and business dashboards; pitched the POC to stakeholders and it was later adopted full-time; used an LLM layer to translate requests into SQL, fetch data, and render results in a React.js app; added JWT-based auth to scope data access by user role/department; and implemented SQL validation and guardrails against unsafe queries and prompt injection, lifting data-fetch accuracy to 99%",
+    ],
+    responsibilities: [
+      "Developed predictive models achieving 85%+ accuracy using advanced statistical methods and hypothesis testing; utilized rigorous cross-validation and evaluation metrics to drive capital allocation decisions.", 
+      "Fine-tuned BERT-based transformers on domain-specific financial text to extract latent sentiment and predictive insights, significantly outperforming baseline models in unstructured data classification.", 
+      "Conducted in-depth EDA to isolate key business drivers and correlations, directly informing feature selection and hyperparameter optimization for production-scale forecasting.",
+      "Built automated data pipelines integrating Shopify-based analytics with custom dashboards, enabling near-real-time monitoring of revenue and retention KPIs.",
+    ],
+    technologies: ["Python 3.9", "node.js", "Docker", "ngrok", "PostgreSQL", "LLM (Text-to-SQL)", "React.js", "Scrapy", "Selenium", "Bert-uncased", "Transformer", "Self-Attention", "MongoDB"],
+  },
+  
 ];
 
 // Repository names (as they appear on GitHub) to prioritise when ranking
